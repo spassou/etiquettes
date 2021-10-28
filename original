@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<t t-name="product.report_producttemplatelabel">
+    <t t-call="web.basic_layout">
+    <style>
+      td {
+        padding: 0.5mm 0.5mm 0mm 0.5mm;
+      }
+      div.label {
+        min-width: 65mm;
+        max-width: 65mm;
+        display:inline-block;
+        max-height: 50mm;
+        margin: 1.25mm 4mm;
+      }
+      table.label{
+        width: 100%;
+        table-layout:fixed;
+        /* border: 1px solid black; */
+      }
+      div.product_name {
+        max-height:14mm;
+        min-height:14mm;
+        font-size: 3.5mm;
+        overflow: hidden;
+      }
+      div.product_price {
+        max-height:5.3mm;
+        min-height:5.3mm;
+        font-size: 3.5mm;
+        font-weight: bolder;
+
+      }
+      div.product_certificates {
+        max-height:5.4mm;
+        min-height:5.4mm;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      td.half {
+        min-width: 50%;
+        max-width: 50%;
+      }
+      td.product_certificates {
+        font-size: 3.5mm;
+        font-weight: bold;
+        vertical-align: middle;
+      }
+      div.price_per_kg {
+        max-height:3.4mm;
+        min-height:3.4mm;
+        font-size: 2mm;
+        font-weight: normal
+      }
+      td.barcode {
+         vertical-align: middle;
+         text-align:center;
+         font-size: 2mm;
+      }
+      img.barcode {
+        height: 9mm;
+        width: auto;
+      }
+
+
+    </style>
+        <div class="page">
+            <t t-foreach="docs" t-as="template">
+                <t t-foreach="template.product_variant_ids" t-as="product">
+                    <t t-call="product.report_one_shelf_label">
+                        <t t-set="product" t-value="product"/>
+                    </t>
+                </t>
+            </t>
+        </div>
+    </t>
+</t>
