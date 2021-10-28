@@ -21,6 +21,7 @@
         max-height:14mm;
         min-height:14mm;
         font-size: 5mm;
+        line-height: 1;
         overflow: hidden;
       }
       div.product_price {
