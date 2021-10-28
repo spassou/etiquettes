@@ -20,13 +20,13 @@
       div.product_name {
         max-height:14mm;
         min-height:14mm;
-        font-size: 3.5mm;
+        font-size: 5mm;
         overflow: hidden;
       }
       div.product_price {
         max-height:5.3mm;
         min-height:5.3mm;
-        font-size: 3.5mm;
+        font-size: 4mm;
         font-weight: bolder;
 
       }
@@ -42,14 +42,14 @@
         max-width: 50%;
       }
       td.product_certificates {
-        font-size: 3.5mm;
+        font-size: 2.5mm;
         font-weight: bold;
         vertical-align: middle;
       }
       div.price_per_kg {
-        max-height:3.4mm;
-        min-height:3.4mm;
-        font-size: 2mm;
+        max-height:4mm;
+        min-height:4mm;
+        font-size: 3.5mm;
         font-weight: normal
       }
       td.barcode {
